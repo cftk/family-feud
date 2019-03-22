@@ -1,7 +1,7 @@
 var app = {
   version: 1,
   currentQ: 0,
-  jsonFile: 'https://api.myjson.com/bins/1febyb',
+  jsonFile: 'https://api.myjson.com/bins/n7ooy',
   board: $("<div class='gameBoard'>" +
 
              '<!--- Scores --->' +
