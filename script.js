@@ -1,4 +1,3 @@
-var counter = 1
 var app = {
   version: 1,
   currentQ: 0,
@@ -152,7 +151,6 @@ var app = {
   },
   changeQuestion: function () {
     app.currentQ++
-    counter = 1
     app.makeQuestion(app.currentQ)
   },
   // Inital function
@@ -165,6 +163,7 @@ var app = {
 }
 app.init()
 
+var counter = 1
 $(document).keypress(function (e) {
   var key = e.originalEvent.key
   if (!isNaN(key) && key <= 8 && key > 0) {
@@ -189,5 +188,9 @@ $(document).keypress(function (e) {
     if (counter % 4 === 0) {
       counter = 1
     }
+  }
+
+  if (key === 'r') {
+    counter = 1
   }
 })
